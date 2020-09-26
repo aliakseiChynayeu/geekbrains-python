@@ -63,18 +63,3 @@ class PoliceCar(Car):
     def __init__(self, color: str, name: str):
         super().__init__(color, name)
         self._is_police = True
-
-
-workCar = WorkCar("white", "skoda")
-sportCar = SportCar("red", "lamborghini")
-townCar = TownCar("green", "bmw")
-policeCar = PoliceCar("black", "ford")
-
-workCar.go(100)
-sportCar.go(300)
-townCar.go(30)
-policeCar.go(310)
-
-sportCar.stop()
-workCar.go(40)
-townCar.turn("left")
